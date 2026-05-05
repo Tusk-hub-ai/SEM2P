@@ -1,0 +1,24 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+.ipynb_checkpoints/
+
+# Data — too big for git, lives in OneDrive/external storage
+data/
+*.csv
+*.parquet
+
+# Trained models — regenerable
+*.joblib
+*.pkl
+
+# Result outputs (large, regenerable)
+results_*/
+features_smoke.csv
+
+# OS / editor cruft
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
