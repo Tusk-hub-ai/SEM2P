@@ -15,6 +15,7 @@ data/
 features.csv
 features_split.csv
 features_smoke.csv
+features_top*.csv
 *.parquet
 
 # Allow small reference CSVs in a docs/ folder if you ever want them
@@ -35,10 +36,12 @@ features_smoke.csv
 results_svm/
 results_xgb/
 results_mlp/
+results_featsel/
+results_*_reduced/
 results_*/
 
-# But keep small summary JSONs and CSVs if you want them version-controlled,
-# uncomment the lines below to override the results_*/ rule for specific files
+# Keep small summary JSONs and CSVs if you want them version-controlled,
+# uncomment to override the results_*/ rule:
 # !results_*/*.json
 # !results_*/*_per_device_test.csv
 # !results_*/*_per_class_test.csv
