@@ -1,24 +1,75 @@
+# ============================================================
 # Python
+# ============================================================
 __pycache__/
 *.pyc
+*.pyo
 .venv/
+venv/
 .ipynb_checkpoints/
 
-# Data — too big for git, lives in OneDrive/external storage
+# ============================================================
+# Dataset and feature CSVs — too big for git
+# ============================================================
 data/
-*.csv
+features.csv
+features_split.csv
+features_smoke.csv
 *.parquet
 
-# Trained models — regenerable
+# Allow small reference CSVs in a docs/ folder if you ever want them
+!docs/*.csv
+
+# ============================================================
+# Trained models — regenerable from scripts, large
+# ============================================================
 *.joblib
 *.pkl
+*.pickle
+*.h5
+*.onnx
 
-# Result outputs (large, regenerable)
+# ============================================================
+# Experiment outputs — regenerable
+# ============================================================
+results_svm/
+results_xgb/
+results_mlp/
 results_*/
-features_smoke.csv
 
+# But keep small summary JSONs and CSVs if you want them version-controlled,
+# uncomment the lines below to override the results_*/ rule for specific files
+# !results_*/*.json
+# !results_*/*_per_device_test.csv
+# !results_*/*_per_class_test.csv
+
+# ============================================================
+# LaTeX build artifacts (if you ever build locally)
+# ============================================================
+*.aux
+*.log
+*.out
+*.toc
+*.synctex.gz
+*.fls
+*.fdb_latexmk
+*.bbl
+*.blg
+
+# ============================================================
 # OS / editor cruft
+# ============================================================
 .DS_Store
 Thumbs.db
+desktop.ini
 .vscode/
 .idea/
+*.swp
+*~
+
+# ============================================================
+# Secrets / local config (never commit these)
+# ============================================================
+.env
+*.key
+secrets.json
