@@ -1,0 +1,55 @@
+{
+  "model": "MLPClassifier",
+  "n_features": 300,
+  "n_train": 13212,
+  "n_val": 750,
+  "n_test": 2968,
+  "scene_classes": [
+    "airport",
+    "bus",
+    "metro",
+    "metro_station",
+    "park",
+    "public_square",
+    "shopping_mall",
+    "street_pedestrian",
+    "street_traffic",
+    "tram"
+  ],
+  "best_params": {
+    "hidden_layer_sizes": [
+      128,
+      64
+    ],
+    "alpha": 0.0001,
+    "activation": "relu"
+  },
+  "val_acc": 0.656,
+  "train_acc_at_best": 0.9747199515591887,
+  "test_acc": 0.5414420485175202,
+  "test_macro_f1": 0.5430172477648887,
+  "per_device_test_acc": {
+    "a": 0.6666666666666666,
+    "b": 0.5896656534954408,
+    "c": 0.6200607902735562,
+    "s1": 0.48787878787878786,
+    "s2": 0.5363636363636364,
+    "s3": 0.5515151515151515,
+    "s4": 0.48484848484848486,
+    "s5": 0.48787878787878786,
+    "s6": 0.4484848484848485
+  },
+  "per_class_test_acc": {
+    "airport": 0.3344594594594595,
+    "bus": 0.6666666666666666,
+    "metro": 0.494949494949495,
+    "metro_station": 0.5387205387205387,
+    "park": 0.6936026936026936,
+    "public_square": 0.3771043771043771,
+    "shopping_mall": 0.5858585858585859,
+    "street_pedestrian": 0.41414141414141414,
+    "street_traffic": 0.7811447811447811,
+    "tram": 0.527027027027027
+  },
+  "total_time_s": 120.85983729362488
+}

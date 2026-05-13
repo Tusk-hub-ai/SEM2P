@@ -1,0 +1,11 @@
+,airport,bus,metro,metro_station,park,public_square,shopping_mall,street_pedestrian,street_traffic,tram
+airport,120,2,3,9,2,19,72,65,4,0
+bus,1,196,21,7,3,1,1,5,1,61
+metro,8,20,151,37,1,13,1,11,3,52
+metro_station,19,6,43,136,8,8,39,12,15,11
+park,3,6,5,3,227,22,6,4,11,10
+public_square,13,4,16,16,33,141,9,34,16,15
+shopping_mall,46,1,0,28,1,6,189,25,0,1
+street_pedestrian,45,9,8,5,5,57,52,103,5,8
+street_traffic,4,6,1,8,10,20,5,10,233,0
+tram,2,16,48,27,3,6,1,9,4,180
